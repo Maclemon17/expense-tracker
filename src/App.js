@@ -4,21 +4,25 @@ import Balance from './components/Balance';
 import Header from './components/Header';
 import IncomeExpenses from './components/IncomeExpenses';
 import TransactionHistory from './components/TransactionHistory';
+import { GlobalProvider } from './contex/GlobalState';
 
 function App() {
 	return (
 		<>
-			<Header />
+			<GlobalProvider>
 
-			<div className="container">
-				<Balance />
-				<IncomeExpenses />
-				<TransactionHistory />
-				<AddTransaction />
-			</div>
+				<Header />
+
+				<div className="container">
+					<Balance />
+					<IncomeExpenses />
+					<TransactionHistory />
+					<AddTransaction />
+				</div>
+
+			</GlobalProvider>
 		</>
 	);
 }
 
 export default App;
- 
