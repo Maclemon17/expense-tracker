@@ -13,7 +13,7 @@ const AddTransaction = () => {
     const onSubmit = (e) => {
         e.preventDefault();
 
-        if (name == " " || amount == 0 ) {
+        if (name === " " || amount === 0 ) {
             alert("Please fill in the fields")
         } else {
             const newTransaction = {
