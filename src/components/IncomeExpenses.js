@@ -18,8 +18,6 @@ const IncomeExpenses = () => {
     .reduce((icomeBal, exp) => (icomeBal += exp), 0) * -1
     .toFixed(2);
 
-    console.log(expense);
-
 
     return (
         <div className="inc-exp-container">
